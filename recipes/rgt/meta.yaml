@@ -17,7 +17,7 @@ build:
     - rgt-THOR = rgt.THOR.THOR:main
     - rgt-viz = rgt.viz.Main:main
     - rgt-TDF = rgt.tdf.Main:main
-  number: 0
+  number: 1
 
 requirements:
   build:
@@ -25,10 +25,10 @@ requirements:
   host:
     - cython
     - pip
-    - python >=3.7,<3.8
+    - python >=3.6
     - zlib
   run:
-    - python >=3
+    - python >=3.6
     - numpy
     - scipy
     - biopython
@@ -41,7 +41,7 @@ requirements:
     - fisher
     - seaborn
     - adjusttext
-    - matplotlib-base
+    - matplotlib-base >=3.5.0
     - mpmath
     - matplotlib-venn
     - natsort
